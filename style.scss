@@ -4,6 +4,7 @@
 @media (max-width: $mobile) {
   body {
     padding: 16px;
+    background-color: rgb(218, 218, 218);
   }
 
   header {
@@ -68,5 +69,45 @@
   }
   footer {
     display: flex;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    img {
+      width: 150px;
+      height: 40px;
+    }
+    #contact {
+      div{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        p {
+          margin-left: 15px;
+        }
+        img {
+        width: 25px;
+        height: 15px;
+        }
+      }
+      text-align: left;
+    }
+    #about {
+      margin-top: 15px;
+      margin-bottom: 1px;
+      p {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    #social {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50px;
+      }
+    }
   }
 }

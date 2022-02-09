@@ -1,6 +1,7 @@
 @media (max-width: 375px) {
   body {
     padding: 16px;
+    background-color: #dadada;
   }
 
   header {
@@ -62,6 +63,46 @@
 
   footer {
     display: flex;
+    align-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  footer img {
+    width: 150px;
+    height: 40px;
+  }
+  footer #contact {
+    text-align: left;
+  }
+  footer #contact div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  footer #contact div p {
+    margin-left: 15px;
+  }
+  footer #contact div img {
+    width: 25px;
+    height: 15px;
+  }
+  footer #about {
+    margin-top: 15px;
+    margin-bottom: 1px;
+  }
+  footer #about p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer #social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  footer #social img {
+    width: 50px;
   }
 }
 
