@@ -44,8 +44,8 @@
     display: flex;
     width: 100%;
     font-family: "Poppins", sans-serif;
-    color: #00252e;
     font-weight: 600;
+    color: #00252e;
     font-size: 22px;
   }
   main article p {
@@ -82,33 +82,64 @@
   }
   #features article {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    padding: 20px 15px;
+    box-shadow: 0px 0px 7px #c9c9c9;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
   #features article figure img {
-    width: 300px;
-    height: 250px;
+    width: 270px;
+    height: 220px;
   }
   #features article header {
     justify-content: center;
     display: flex;
     width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #00252e;
+    font-size: 22px;
+  }
+  #features article p {
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: #808d99;
+    font-size: 16px;
   }
 
   #sticky {
     display: flex;
     width: 100%;
+    height: fit-content;
+    padding: 35px 5px;
+    border-radius: 15px;
     margin-top: 50px;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 8px #c9c9c9;
+    position: sticky;
+    bottom: 10px;
+  }
+  #sticky header {
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #00252e;
+    font-size: 18px;
   }
   #sticky button {
+    font-size: 12px;
     border-radius: 25px;
     border: none;
-    padding: 10px 60px;
+    padding: 15px 60px;
     box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
