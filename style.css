@@ -1,12 +1,25 @@
 @media (max-width: 375px) {
   body {
+    background-color: #ebfbff;
     padding: 16px;
-    background-color: #dadada;
+    background-image: url("./images/bg-hero-mobile.svg");
+    background-position: left -1cm;
+    background-repeat: no-repeat;
   }
 
   header {
     display: flex;
     justify-content: space-between;
+  }
+  header button {
+    border-radius: 25px;
+    border: none;
+    padding: 5px 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #00252e;
+    background-color: #FFFFFF;
   }
   header img {
     width: 90px;
@@ -21,19 +34,41 @@
     text-align: center;
     flex-wrap: wrap;
   }
-  main figure img {
-    width: 300px;
-    height: 250px;
-  }
   main article {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
   }
   main article header {
     display: flex;
     width: 100%;
+    font-family: "Poppins", sans-serif;
+    color: #00252e;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  main article p {
+    font-size: 18px;
+    font-family: "Open Sans";
+    font-weight: 400;
+    color: #00252e;
+  }
+  main article button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    border: none;
+    padding: 10px 60px;
+    box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #ff52bf;
+  }
+  main figure img {
+    width: 300px;
+    height: 200px;
   }
 
   #features {
@@ -43,6 +78,7 @@
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
+    background-color: #fcfcfc;
   }
   #features article {
     display: flex;
@@ -59,6 +95,25 @@
     justify-content: center;
     display: flex;
     width: 100%;
+  }
+
+  #sticky {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  #sticky button {
+    border-radius: 25px;
+    border: none;
+    padding: 10px 60px;
+    box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #ff52bf;
   }
 
   footer {

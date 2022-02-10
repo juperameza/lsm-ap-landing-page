@@ -1,2 +1,40 @@
 //displays
 $mobile: 375px;
+
+//Colors
+$white:#FFFFFF;
+//PRIMARY
+$primary-pink: hsl(322, 100%, 66%);
+$primary-white: #fcfcfc;
+//Neutral
+$neutral-paleCyan: hsl(193, 100%, 96%);
+$neutral-darkCyan: hsl(192, 100%, 9%);
+$neutral-blue: hsl(208, 11%, 55%);
+//Font
+$fontSize:18px;
+
+//Miximns
+@mixin bodyFont(
+  $color: $neutral-darkCyan)
+ {
+  font-size: $fontSize;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: $color;
+}
+
+@mixin button (
+    $color:$neutral-darkCyan,
+    $background-color:$white,
+    $padding:5px 20px,
+    $colorShadow:rgba(0, 0, 0, 0.1)
+) {
+    border-radius: 25px;
+    border: none;
+    padding:$padding ;
+    box-shadow:  2px 2px 15px $colorShadow;
+    font-family:"Open Sans", sans-serif ;
+    font-weight:700;
+    color:$color;
+    background-color:$background-color ;
+}
