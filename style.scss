@@ -1,289 +1,319 @@
 //imports
 @import "./utils/variables";
 
-  body {
-    background-color: $white;
-    margin:unset;
-    background-repeat: no-repeat;
-  
-    //font-family: ;
-    //font-family: ;
+body {
+  background-color: $white;
+  margin: unset;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  background-color: $neutral-paleCyan;
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-position: left -1cm;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+
+  #top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+
+    button {
+      @include button();
+    }
+    img {
+      width: 90px;
+      height: 20px;
+    }
   }
 
-  main {
+  article {
     display: flex;
-    width: 100%; 
-    background-color: $neutral-paleCyan;
-    background-image: url("./images/bg-hero-mobile.svg");
-    background-position: left -1cm;
+    width: 90%;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
-   
-    #top {
+    padding-top: 30px;
+    header {
       display: flex;
       width: 100%;
-      justify-content: space-between;
-      padding: 16px;
-      box-sizing: border-box;
-     
-      button {
-        @include button();
-      }
+
+      @include headerFont();
+    }
+    p {
+      @include bodyFont();
+    }
+    button {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include button(
+        $color: $white,
+        $background-color: $primary-pink,
+        $padding: 10px 60px,
+        $colorShadow: hsla(322, 100%, 66%, 0.534)
+      );
+    }
+  }
+  figure {
+    img {
+      width: 300px;
+      height: 200px;
+    }
+  }
+}
+#features {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: $primary-white;
+  padding: 16px;
+  box-sizing: border-box;
+  article {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    padding: 20px 15px;
+    box-shadow: 0px 0px 7px #c9c9c9;
+    border-radius: 10px;
+    box-sizing: border-box;
+    figure {
       img {
-        width: 90px;
-        height: 20px;
+        width: 270px;
+        height: 220px;
       }
     }
-  
-    article {
-      display: flex;
-      width: 90%;
+    header {
       justify-content: center;
+      display: flex;
+      width: 100%;
+      @include headerFont();
+    }
+    p {
+      @include bodyFont($color: $neutral-blue);
+      font-size: 16px;
+    }
+  }
+}
+#sticky {
+  display: flex;
+  width: 90%;
+  height: fit-content;
+  padding: 35px 5px;
+  border-radius: 15px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: $white;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px #c9c9c9;
+  position: sticky;
+  bottom: 10px;
+  margin: auto;
+
+  header {
+    margin-bottom: 20px;
+    @include headerFont($font-size: 18px);
+  }
+  button {
+    font-size: 12px;
+    @include button(
+      $color: $white,
+      $background-color: $primary-pink,
+      $padding: 15px 60px,
+      $colorShadow: hsla(322, 100%, 66%, 0.534)
+    );
+  }
+}
+footer {
+  background-color: $neutral-darkCyan;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  @include bodyFont($color: $white);
+  font-size: 15px;
+  padding: 16px;
+  box-sizing: border-box;
+  img {
+    margin-left: 15px;
+    width: 150px;
+    height: 40px;
+  }
+  #contact {
+    div {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      p {
+        margin-left: 15px;
+      }
+      img {
+        width: 25px;
+        height: 15px;
+      }
+    }
+    text-align: left;
+  }
+  #about {
+    margin: 15px 0px 15px 15px;
+    p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  #social {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50px;
+      margin: unset;
+    }
+    p {
+      margin: 20px 0px;
+      font-size: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  main {
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-position: left -1cm;
+    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
+    text-align: left;
+    justify-content: center;
+    #top {
+      padding: 16px 155px;
+      img {
+        width: 110px;
+        height: 30px;
+      }
+    }
+
+    article {
+      background-color: bla;
+      display: flex;
+      width: 45%;
+      justify-content: start;
       flex-wrap: wrap;
       padding-top: 30px;
+      padding-left: 10px;
       header {
         display: flex;
-        width: 100%;
-       
-        @include headerFont()
+        width: 45%;
+
+        @include headerFont();
       }
-      p{
+      p {
+        width: 100%;
         @include bodyFont();
       }
       button {
         margin-top: 20px;
         margin-bottom: 20px;
-        @include button($color:$white, $background-color: $primary-pink,$padding:10px 60px,$colorShadow:hsla(322, 100%, 66%, 0.534));
+
+        @include button(
+          $color: $white,
+          $background-color: $primary-pink,
+          $padding: 10px 60px,
+          $colorShadow: hsla(322, 100%, 66%, 0.534)
+        );
       }
-    } 
+    }
     figure {
       img {
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 300px;
       }
     }
   }
   #features {
-
     display: flex;
-    width: 100%;
-    margin-top: 50px;
+    width: 80%;
+    margin: 50px auto;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     flex-wrap: wrap;
-background-color:$primary-white;
-padding: 16px;
+    background-color: $primary-white;
+    padding: 16px;
     box-sizing: border-box;
+    article:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
     article {
       display: flex;
       width: 100%;
-      justify-content: center;
-      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-wrap: nowrap;
       margin-bottom: 30px;
-      padding:20px 15px;
+      padding: 20px 15px;
       box-shadow: 0px 0px 7px #c9c9c9;
       border-radius: 10px;
       box-sizing: border-box;
+      align-items: center;
       figure {
+        width: fit-content;
+        margin-right: unset;
         img {
-          width: 270px;
-          height: 220px;
+          width: 370px;
+          height: 320px;
         }
       }
-      header {
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        @include headerFont()
-      }
-      p{
-        @include bodyFont($color:$neutral-blue);
-        font-size:16px;
-      }
-      
-    }
-  }
-  #sticky {
-    display: flex;
-    width: 90%;
-    height:fit-content;
-    padding: 35px 5px;
-    border-radius: 15px;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    background-color:$white;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 8px #c9c9c9;
-    position: sticky;
-    bottom: 10px;
-    margin: auto;
-    
-    header{
-      margin-bottom:20px;
-      @include headerFont($font-size:18px);
-
-    }
-    button {
-      font-size:12px;
-      @include button($color:$white, $background-color: $primary-pink,$padding:15px 60px,$colorShadow:hsla(322, 100%, 66%, 0.534));
-    }
-  }
-  footer {
-    background-color: $neutral-darkCyan;
-    display: flex;
-    align-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    @include bodyFont($color: $white);
-    font-size: 15px;
-    padding: 16px;
-    box-sizing: border-box;
-    img {
-     
-      margin-left: 15px;
-      width: 150px;
-      height: 40px;
-    }
-    #contact {
       div {
         display: flex;
-        justify-content: start;
-        align-items: center;
-        p {
-          margin-left: 15px;
-        }
-        img {
-          width: 25px;
-          height: 15px;
-        }
-      }
-      text-align: left;
-    }
-    #about {
-      margin: 15px 0px 15px 15px;
-      p {
-        display: flex;
+        justify-content: flex-start;
         flex-wrap: wrap;
-      }
-    }
-    #social {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 50px;
-        margin:unset;
-      }
-      p {
-        margin: 20px 0px;
-        font-size: 10px;
+        width: 400px;
+        height: fit-content;
+        text-align: left;
+
+        header {
+          justify-content: flex-start;
+          display: flex;
+          width: 100%;
+          height: fit-content;
+          @include headerFont();
+        }
+        p {
+          width: 100%;
+          height: fit-content;
+          @include bodyFont($color: $neutral-blue);
+          font-size: 16px;
+        }
       }
     }
   }
 
+  #sticky {
+    flex-wrap: wrap;
+    width: 35%;
+  }
 
-
-  @media (min-width: $desktop){
-    main {
-      background-image: url("./images/bg-hero-desktop.svg");
-      background-position: left -1cm;
-      display: flex;
-      width: 100%; 
-      padding-bottom: 50px;
-      text-align: left;
-      justify-content: center;
-      #top {
-        img {
-          width: 110px;
-          height: 30px;
-        }
-      }
-    
-      article {
-        background-color:bla;
-        display: flex;
-        width: 45%;
-        justify-content: start;
-        flex-wrap: wrap;
-        padding-top: 30px;
-        padding-left: 10px;
-        header {
-          display: flex;
-          width: 45%;
-         
-          @include headerFont()
-        }
-        p{
-          width: 100%;
-          @include bodyFont();
-        }
-        button {
-          margin-top: 20px;
-          margin-bottom: 20px;
-          
-          @include button($color:$white, $background-color: $primary-pink,$padding:10px 60px,$colorShadow:hsla(322, 100%, 66%, 0.534));
-        }
-      } 
-      figure {
-        img {
-          width: 400px;
-          height: 300px;
-        }
-      }
+  footer {
+    #contact {
+      width: 20%;
     }
-    #features {
-      display: flex;
-      width: 90%;
-      margin: 50px auto;
-      justify-content: center;
-      text-align: center;
-      flex-wrap: wrap;
-  background-color:$primary-white;
-  padding: 16px;
-      box-sizing: border-box;
-      article {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        flex-wrap: nowrap;
-        margin-bottom: 30px;
-        padding:20px 15px;
-        box-shadow: 0px 0px 7px #c9c9c9;
-        border-radius: 10px;
-        box-sizing: border-box;
-        figure {
-          width: 50%;
-          img {
-            width: 270px;
-            height: 220px;
-          }
-        }
-        div{
-          display: flex;
-          justify-content:center;
-          flex-wrap: wrap;
-          width: 50%;
-          text-align: left;
-             header {
-          justify-content: center;
-          display: flex;
-          width: 100%;
-          height:fit-content;
-          @include headerFont()
-        }
-        p{
-          width:70%;
-          height:fit-content;
-          @include bodyFont($color:$neutral-blue);
-          font-size:16px;
-        }
-        }
+    #about {
      
-        
-      }
+      
     }
+    #social {
+    }
+  }
 }

@@ -218,6 +218,9 @@ footer #social p {
     text-align: left;
     justify-content: center;
   }
+  main #top {
+    padding: 16px 155px;
+  }
   main #top img {
     width: 110px;
     height: 30px;
@@ -265,42 +268,48 @@ footer #social p {
 
   #features {
     display: flex;
-    width: 90%;
+    width: 80%;
     margin: 50px auto;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     flex-wrap: wrap;
     background-color: #fcfcfc;
     padding: 16px;
     box-sizing: border-box;
   }
+  #features article:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
   #features article {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: nowrap;
     margin-bottom: 30px;
     padding: 20px 15px;
     box-shadow: 0px 0px 7px #c9c9c9;
     border-radius: 10px;
     box-sizing: border-box;
+    align-items: center;
   }
   #features article figure {
-    width: 50%;
+    width: fit-content;
+    margin-right: unset;
   }
   #features article figure img {
-    width: 270px;
-    height: 220px;
+    width: 370px;
+    height: 320px;
   }
   #features article div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    width: 50%;
+    width: 400px;
+    height: fit-content;
     text-align: left;
   }
   #features article div header {
-    justify-content: center;
+    justify-content: flex-start;
     display: flex;
     width: 100%;
     height: fit-content;
@@ -310,13 +319,24 @@ footer #social p {
     font-size: 22px;
   }
   #features article div p {
-    width: 70%;
+    width: 100%;
     height: fit-content;
     font-size: 18px;
     font-family: "Open Sans";
     font-weight: 400;
     color: #808d99;
     font-size: 16px;
+  }
+
+  #sticky {
+    flex-wrap: wrap;
+    width: 35%;
+  }
+
+  footer #contact {
+    width: 20%;
+  }
+  footer #about {
   }
 }
 
