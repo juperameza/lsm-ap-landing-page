@@ -1,54 +1,246 @@
-@media (max-width: 375px) {
-  body {
-    background-color: #ebfbff;
-    padding: 16px;
-    background-image: url("./images/bg-hero-mobile.svg");
-    background-position: left -1cm;
-    background-repeat: no-repeat;
-  }
+body {
+  background-color: #FFFFFF;
+  margin: unset;
+  background-repeat: no-repeat;
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-  }
-  header button {
-    border-radius: 25px;
-    border: none;
-    padding: 5px 20px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    color: #00252e;
-    background-color: #FFFFFF;
-  }
-  header img {
-    width: 90px;
-    height: 20px;
-  }
+main {
+  display: flex;
+  width: 100%;
+  background-color: #ebfbff;
+  background-image: url("./images/bg-hero-mobile.svg");
+  background-position: left -1cm;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+main #top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
+main #top button {
+  border-radius: 25px;
+  border: none;
+  padding: 5px 20px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #00252e;
+  background-color: #FFFFFF;
+}
+main #top img {
+  width: 90px;
+  height: 20px;
+}
+main article {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+main article header {
+  display: flex;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #00252e;
+  font-size: 22px;
+}
+main article p {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #00252e;
+}
+main article button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  border: none;
+  padding: 10px 60px;
+  box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #ff52bf;
+}
+main figure img {
+  width: 300px;
+  height: 200px;
+}
 
+#features {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #fcfcfc;
+  padding: 16px;
+  box-sizing: border-box;
+}
+#features article {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 20px 15px;
+  box-shadow: 0px 0px 7px #c9c9c9;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+#features article figure img {
+  width: 270px;
+  height: 220px;
+}
+#features article header {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #00252e;
+  font-size: 22px;
+}
+#features article p {
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #808d99;
+  font-size: 16px;
+}
+
+#sticky {
+  display: flex;
+  width: 90%;
+  height: fit-content;
+  padding: 35px 5px;
+  border-radius: 15px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px #c9c9c9;
+  position: sticky;
+  bottom: 10px;
+  margin: auto;
+}
+#sticky header {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #00252e;
+  font-size: 18px;
+}
+#sticky button {
+  font-size: 12px;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 60px;
+  box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #ff52bf;
+}
+
+footer {
+  background-color: #00252e;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+footer img {
+  margin-left: 15px;
+  width: 150px;
+  height: 40px;
+}
+footer #contact {
+  text-align: left;
+}
+footer #contact div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+footer #contact div p {
+  margin-left: 15px;
+}
+footer #contact div img {
+  width: 25px;
+  height: 15px;
+}
+footer #about {
+  margin: 15px 0px 15px 15px;
+}
+footer #about p {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer #social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+footer #social img {
+  width: 50px;
+  margin: unset;
+}
+footer #social p {
+  margin: 20px 0px;
+  font-size: 10px;
+}
+
+@media (min-width: 1440px) {
   main {
+    background-image: url("./images/bg-hero-desktop.svg");
+    background-position: left -1cm;
     display: flex;
     width: 100%;
-    margin-top: 50px;
+    padding-bottom: 50px;
+    text-align: left;
     justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
+  }
+  main #top img {
+    width: 110px;
+    height: 30px;
   }
   main article {
+    background-color: bla;
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 45%;
+    justify-content: start;
     flex-wrap: wrap;
+    padding-top: 30px;
+    padding-left: 10px;
   }
   main article header {
     display: flex;
-    width: 100%;
+    width: 45%;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #00252e;
     font-size: 22px;
   }
   main article p {
+    width: 100%;
     font-size: 18px;
     font-family: "Open Sans";
     font-weight: 400;
@@ -67,128 +259,64 @@
     background-color: #ff52bf;
   }
   main figure img {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
   }
 
   #features {
     display: flex;
-    width: 100%;
-    margin-top: 50px;
+    width: 90%;
+    margin: 50px auto;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     background-color: #fcfcfc;
+    padding: 16px;
+    box-sizing: border-box;
   }
   #features article {
     display: flex;
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 30px;
     padding: 20px 15px;
     box-shadow: 0px 0px 7px #c9c9c9;
     border-radius: 10px;
     box-sizing: border-box;
   }
+  #features article figure {
+    width: 50%;
+  }
   #features article figure img {
     width: 270px;
     height: 220px;
   }
-  #features article header {
+  #features article div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: left;
+  }
+  #features article div header {
     justify-content: center;
     display: flex;
     width: 100%;
+    height: fit-content;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: #00252e;
     font-size: 22px;
   }
-  #features article p {
+  #features article div p {
+    width: 70%;
+    height: fit-content;
     font-size: 18px;
     font-family: "Open Sans";
     font-weight: 400;
     color: #808d99;
     font-size: 16px;
-  }
-
-  #sticky {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    padding: 35px 5px;
-    border-radius: 15px;
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 8px #c9c9c9;
-    position: sticky;
-    bottom: 10px;
-  }
-  #sticky header {
-    margin-bottom: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    color: #00252e;
-    font-size: 18px;
-  }
-  #sticky button {
-    font-size: 12px;
-    border-radius: 25px;
-    border: none;
-    padding: 15px 60px;
-    box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    color: #FFFFFF;
-    background-color: #ff52bf;
-  }
-
-  footer {
-    display: flex;
-    align-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-  footer img {
-    width: 150px;
-    height: 40px;
-  }
-  footer #contact {
-    text-align: left;
-  }
-  footer #contact div {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
-  footer #contact div p {
-    margin-left: 15px;
-  }
-  footer #contact div img {
-    width: 25px;
-    height: 15px;
-  }
-  footer #about {
-    margin-top: 15px;
-    margin-bottom: 1px;
-  }
-  footer #about p {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  footer #social {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  footer #social img {
-    width: 50px;
   }
 }
 
