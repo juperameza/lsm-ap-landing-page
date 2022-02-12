@@ -1,5 +1,5 @@
 body {
-  background-color: #FFFFFF;
+  background-color: #fcfcfc;
   margin: unset;
   background-repeat: no-repeat;
 }
@@ -29,7 +29,11 @@ main #top button {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #00252e;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+main #top button:hover {
+  opacity: 80%;
 }
 main #top img {
   width: 90px;
@@ -65,8 +69,12 @@ main article button {
   box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #ff52bf;
+  cursor: pointer;
+}
+main article button:hover {
+  opacity: 80%;
 }
 main figure img {
   width: 300px;
@@ -125,9 +133,9 @@ main figure img {
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-sizing: border-box;
-  box-shadow: 0px 0px 8px #c9c9c9;
+  box-shadow: 0px -3px 5px #c9c9c9;
   position: sticky;
   bottom: 10px;
   margin: auto;
@@ -147,11 +155,16 @@ main figure img {
   box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #ff52bf;
+  cursor: pointer;
+}
+#sticky button:hover {
+  opacity: 80%;
 }
 
 footer {
+  margin-top: -20px;
   background-color: #00252e;
   display: flex;
   align-content: center;
@@ -160,7 +173,7 @@ footer {
   font-size: 18px;
   font-family: "Open Sans";
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 15px;
   padding: 16px;
   box-sizing: border-box;
@@ -173,6 +186,10 @@ footer img {
 footer #contact {
   text-align: left;
 }
+footer #contact div:first-child img {
+  width: 25px;
+  height: 20px;
+}
 footer #contact div {
   display: flex;
   justify-content: start;
@@ -182,7 +199,7 @@ footer #contact div p {
   margin-left: 15px;
 }
 footer #contact div img {
-  width: 25px;
+  width: 20px;
   height: 15px;
 }
 footer #about {
@@ -191,6 +208,10 @@ footer #about {
 footer #about p {
   display: flex;
   flex-wrap: wrap;
+}
+footer #about p:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
 }
 footer #social {
   display: flex;
@@ -203,6 +224,10 @@ footer #social img {
   width: 50px;
   margin: unset;
 }
+footer #social img:hover {
+  filter: invert(48%) sepia(79%) saturate(2073%) hue-rotate(295deg) brightness(102%) contrast(103%);
+  cursor: pointer;
+}
 footer #social p {
   margin: 20px 0px;
   font-size: 10px;
@@ -211,7 +236,7 @@ footer #social p {
 @media (min-width: 1440px) {
   main {
     background-image: url("./images/bg-hero-desktop.svg");
-    background-position: left -1cm;
+    background-position: left -4cm;
     display: flex;
     width: 100%;
     padding-bottom: 50px;
@@ -258,8 +283,12 @@ footer #social p {
     box-shadow: 2px 2px 15px rgba(255, 82, 191, 0.534);
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    color: #FFFFFF;
+    color: #ffffff;
     background-color: #ff52bf;
+    cursor: pointer;
+  }
+  main article button:hover {
+    opacity: 80%;
   }
   main figure img {
     width: 400px;
@@ -333,10 +362,32 @@ footer #social p {
     width: 35%;
   }
 
+  footer {
+    padding: 16px 150px;
+    justify-content: space-between;
+  }
   footer #contact {
-    width: 20%;
+    width: 33%;
+  }
+  footer figure {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-left: unset;
   }
   footer #about {
+    width: 35%;
+    flex-wrap: wrap;
+    display: flex;
+    box-sizing: border-box;
+    height: 180px;
+    flex-direction: column;
+  }
+  footer #social {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }
 

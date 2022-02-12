@@ -3,7 +3,7 @@ $mobile: 375px;
 $desktop: 1440px;
 
 //Colors
-$white:#FFFFFF;
+$white: #ffffff;
 //PRIMARY
 $primary-pink: hsl(322, 100%, 66%);
 $primary-white: #fcfcfc;
@@ -12,39 +12,38 @@ $neutral-paleCyan: hsl(193, 100%, 96%);
 $neutral-darkCyan: hsl(192, 100%, 9%);
 $neutral-blue: hsl(208, 11%, 55%);
 //Font
-$fontSize:18px;
+$fontSize: 18px;
 
 //Miximns
-@mixin headerFont(
-  $font-size:22px
-)
-{
-  font-family:"Poppins", sans-serif;
-  font-weight:600;
-  color:$neutral-darkCyan;
-  font-size:$font-size;
+@mixin headerFont($font-size: 22px) {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: $neutral-darkCyan;
+  font-size: $font-size;
 }
-@mixin bodyFont(
-  $color: $neutral-darkCyan)
- {
+@mixin bodyFont($color: $neutral-darkCyan) {
   font-size: $fontSize;
   font-family: "Open Sans";
   font-weight: 400;
   color: $color;
 }
 
-@mixin button (
-    $color:$neutral-darkCyan,
-    $background-color:$white,
-    $padding:5px 20px,
-    $colorShadow:rgba(0, 0, 0, 0.1)
+@mixin button(
+  $color: $neutral-darkCyan,
+  $background-color: $white,
+  $padding: 5px 20px,
+  $colorShadow: rgba(0, 0, 0, 0.1)
 ) {
-    border-radius: 25px;
-    border: none;
-    padding:$padding ;
-    box-shadow:  2px 2px 15px $colorShadow;
-    font-family:"Open Sans", sans-serif ;
-    font-weight:700;
-    color:$color;
-    background-color:$background-color ;
+  border-radius: 25px;
+  border: none;
+  padding: $padding;
+  box-shadow: 2px 2px 15px $colorShadow;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: $color;
+  background-color: $background-color;
+  cursor: pointer;
+  &:hover {
+    opacity: 80%;
+  }
 }
